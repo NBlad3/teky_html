@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haidilao</title>
+    <style>
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .input {
+            width: 300px;
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .radio-group {
+            margin: 10px 0px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="https://cdn.brandfetch.io/idldFsJxPB/theme/dark/idPaZiVAS3.svg?c=1dxbfHSJFAPEGdCLU4o5B" alt="Logo" style="display: block; float: right; width: 10%;">
+        <h1 style="text-align: center;">Reserve Tables</h1>
+    </div>
+    
+    <form>
+        <input class="input" type="text" placeholder="Name" required>
+        
+        <div class="radio-group">
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+        </div>
+        <input type="submit" value="Reserve">
+    </form>
+</body>
+</html>
+
