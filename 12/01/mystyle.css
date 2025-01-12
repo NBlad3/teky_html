@@ -5,6 +5,11 @@ h1 {
 p{
     color: red;
 }
+
 #h3-text{
     color: chartreuse;
+}
+
+#second-para{
+    color: black;
 }
