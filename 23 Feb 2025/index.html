@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nhân viên nhà hàng - đơn ứng tuyển</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container text-left">
+        <div class="row">
+          <div class="col">
+          </div>
+          <div class="col-8">
+            <h1>Nộp đơn ứng tuyển công việc này</h1>
+            <form class="mb-3">
+                <div>
+                    <label for="nameTB" class="form-label">Full name</label>
+                    <input class="form-control" type="text" placeholder="Họ và tên" id="nameTB" >
+                </div>
+                <div class ="row">
+                    <div class="col">
+                        <label for="phoneTB" class="form-label">Phone Number</label>
+                        <input class="form-control" type="phone" placeholder="(+84) xxx xxx xxx" id="phoneTB" >
+                    </div>
+                    <div class="col">
+                        <label for="emailTB" class="form-label">Phone Number</label>
+                        <input class="form-control" type="email" placeholder="example@email.com" id="emailTB" >
+                    </div>
+                </div>
+                <div class ="row">
+                    <div class="col">
+                        <label>Gender</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" id="maleRB" name="genderRadio">
+                            <label for="maleCB" class="form-check-label">Male</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" id="femaleRB" name="genderRadio">
+                            <label for="femaleCB" class="form-check-label">Female</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label for="datePicker" class="form-label">Birthday</label>
+                        <input type="date" id="datePicker" >
+                    </div>
+                </div>
+                <div class="row g-2">
+                    <div class="form-floating">
+                        <textarea class="form-control" id="addressTextarea"></textarea>
+                        <label for="addressTextarea">Address</label>
+                      </div>
+                </div>
+                <div class ="row">
+                    <div class="col">
+                        <label>Bạn có thể làm việc các ngày Lễ/Tết không?</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" id="yesHolidayRB" name="holidayRadio" value="1">
+                            <label for="yesHolidayRB" class="form-check-label">Yes</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" id="noHolidayRB" name="holidayRadio" value="0">
+                            <label for="noHolidayRB" class="form-check-label">No</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label>Bạn có thể làm việc xoay ca và về trễ sau 23h không?</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" id="yesLateShiftRB" name="lateShiftRadio">
+                            <label for="maleCB" class="form-check-label">Yes</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" id="noLateShiftRB" name="lateShiftRadio">
+                            <label for="femaleCB" class="form-check-label">No</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <select class="form-select" id="dropDownList">
+                        <option selected>Bạn muốn gắn bó với công việc thời gian bao lâu?</option>
+                        <option value="0">Lâu dài trên 6 tháng</option>
+                        <option value="1">Thời vụ 2-3 tháng</option>
+                      </select>
+                </div>
+                <div class="row">
+                    <label>Bạn muốn ứng tuyển vị trí nào?</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="1" name="positionCheckBox" id="position1CB">
+                        <label class="form-check-label" for="positionCheckBox">Phuc vu</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="2" name="positionCheckBox" id="position2CB">
+                        <label class="form-check-label" for="positionCheckBox">Tiep thuc</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="3" name="positionCheckBox" id="position3CB">
+                        <label class="form-check-label" for="positionCheckBox">Pha che</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="4" name="positionCheckBox" id="position4CB">
+                        <label class="form-check-label" for="positionCheckBox">Phu bep</label>
+                      </div>
+                </div>
+                <div class="row">
+                    <label>Khu vực bạn muốn ứng tuyển ?</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="1" name="locationCheckBox" id="location1CB">
+                        <label class="form-check-label" for="location1CB">Quan 1</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="tb" name="locationCheckBox" id="location2CB">
+                        <label class="form-check-label" for="location2CB">Tan Binh</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="3" name="locationCheckBox" id="location3CB">
+                        <label class="form-check-label" for="location3CB">Quan 3</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="bt" name="locationCheckBox" id="location4CB">
+                        <label class="form-check-label" for="location4CB">Quan Binh Than</label>
+                      </div>
+                </div>
+                <div class="row">
+                  <div class="mb-3">
+                    <label for="formFile" class="form-label">Upload your CV</label>
+                    <input class="form-control" type="file" id="formFile">
+                  </div>
+                </div>
+                <div class="row">
+                    <button class="btn btn-primary" type="submit">Nộp đơn ứng tuyển</button>
+                </div>
+
+            </form>
+          </div>
+          <div class="col">
+          </div>
+        </div>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
