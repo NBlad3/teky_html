@@ -3,41 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Haidilao</title>
+    <title>Reservation Form</title>
     <style>
         body {
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        form {
+            width: 50%;
+            margin: 20px auto;
             padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background: #f9f9f9;
         }
-        .input {
-            width: 300px;
+
+        /* Abstand für alle Form-Elemente außer Labels und Radio-Buttons */
+        form *:not(label):not(input[type="radio"]) {
+            margin: 15px 0;
+            display: block;
+        }
+
+        input {
+            padding: 8px;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Radio-Buttons inline */
+        input[type="radio"] {
+            width: auto;
+            margin-right: 5px;
+            display: inline-block;
+        }
+
+        /* Submit-Button Styling */
+        input[type="submit"] {
+            background: orange;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+            border: none;
             padding: 10px;
-            font-size: 16px;
-            margin-bottom: 20px;
         }
+
+        input[type="submit"]:hover {
+            background: darkorange;
+        }
+
+        /* Abstand für die Radio-Button Gruppe */
         .radio-group {
-            margin: 10px 0px;
+            margin: 15px 0;
         }
     </style>
 </head>
 <body>
-    <div>
-        <img src="https://cdn.brandfetch.io/idldFsJxPB/theme/dark/idPaZiVAS3.svg?c=1dxbfHSJFAPEGdCLU4o5B" alt="Logo" style="display: block; float: right; width: 10%;">
-        <h1 style="text-align: center;">Reserve Tables</h1>
-    </div>
-    
+
+    <h1>Reserve a Table</h1>
+
     <form>
-        <input class="input" type="text" placeholder="Name" required>
-        
+        <label for="name">Your name</label>
+        <input class="input" id="name" type="text" required>
+
         <div class="radio-group">
-            <input type="radio" id="male" name="gender" value="Male">
+            <p>Your gender:</p>
+            <input type="radio" id="male" name="gender" value="male">
             <label for="male">Male</label>
-            <input type="radio" id="female" name="gender" value="Female">
+            <input type="radio" id="female" name="gender" value="female">
             <label for="female">Female</label>
         </div>
+
+        <label for="people">Amount of people</label>
+        <input type="number" min="2" max="30" id="people" required>
+
         <input type="submit" value="Reserve">
     </form>
+
 </body>
 </html>
-
