@@ -36,7 +36,6 @@
             height: auto;
         }
         .form-container {
-            display: none;
             position: absolute;
             top: 60%;
             left: 70%;
@@ -51,7 +50,7 @@
     <div class="container">
         <img src="pictures/unipass.png" alt="image">
         <button class="button" onclick="toggleForm()">Register now</button>
-        <div class="form-container" id="formContainer">
+        <div class="form-container" style="display: none;" id="formContainer">
             <h2>Registration Form</h2>
             <form>
                 <label for="name">Name:</label><br>
@@ -65,8 +64,13 @@
 
     <script>
         function toggleForm() {
-            formContainer.style.display = 'block';
-        }   
+            if(formContainer.style.display === 'none'){
+                formContainer.style.display = 'block';
+            }else{
+                formContainer.style.display = 'none';
+            }
+        }
+    
     </script>
 </body>
 </html>
